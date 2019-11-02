@@ -12,39 +12,8 @@ html {
     height: 100vh;  /* NEW */
     margin: 0;  /* NEW */
     main {
-      .weather-nav {
-        display: flex;
-        .weather {
-          text-align: center;
-        }
-      }
       display: flex;
       flex-direction: column;
-      form {
-        margin: 1em auto !important;
-        height: 45px;
-        width: 490px;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 3px;
-        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.06);
-        input[type="search"] {
-          width: inherit;
-          height: inherit;
-          padding-right: 0;
-          padding-top: 0;
-          padding-bottom: 0;
-          padding-left: 0.75em;
-          border-width: 0;
-          font-size: 1.1em;
-          font-family: interstate-mono, monospace !important;
-          font-weight: 300 !important;
-          font-style: normal !important;
-
-          &:focus {
-            outline: none;
-          }
-        }
-      }
       nav {
         display: flex;
         justify-content: center;
@@ -83,6 +52,11 @@ html {
 footer {
   display: flex;
   align-self: flex-end;
+}
+
+#def {
+  color: $def;
+  font-weight: 400;
 }
 
 #stack {
